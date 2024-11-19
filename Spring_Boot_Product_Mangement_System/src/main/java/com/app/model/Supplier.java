@@ -1,10 +1,12 @@
 package com.app.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class Supplier {
 
+	@Id
 	private int sid;
 	private String sname;
 	private String scontact;

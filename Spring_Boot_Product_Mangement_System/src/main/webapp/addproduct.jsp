@@ -8,15 +8,14 @@
 </head>
 <body>
 <form action="addproducts">
-Product-id: <input type="number" name="pid">
-Product-Name: <input type="text" name="pname">
-Product-Description: <input type="text" name="pdescription">
-Product-Price: <input type="number" name="pprice">
-Supplier-Id: <input type="number" name="s.sid">
-Supplier-Name: <input type="text" name="s.sname">
-Supplier-Contact: <input type="text" name="s.scontact">
+Product-id: <input type="number" name="pid"><br>
+Product-Name: <input type="text" name="pname"><br>
+Product-Description: <input type="text" name="pdescription"><br>
+Product-Price: <input type="number" name="pprice"><br>
+Supplier-Id: <input type="number" name="s.sid"><br>
+Supplier-Name: <input type="text" name="s.sname"><br>
+Supplier-Contact: <input type="text" name="s.scontact"><br>
 <input type="submit" value="addproduct">
-<input>
 </form>
 </body>
 </html>

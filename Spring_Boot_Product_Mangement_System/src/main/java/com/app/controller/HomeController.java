@@ -18,4 +18,15 @@ public class HomeController {
 		return "adminview";
 	}
 	
+	@RequestMapping("/add")
+	public String addproduct()
+	{
+		return "addproduct";
+	}
+	
+	@RequestMapping("/view")
+	public String viewproduct()
+	{
+		return "viewproduct";
+	}
 }

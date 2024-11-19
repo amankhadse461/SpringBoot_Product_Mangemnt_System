@@ -1,7 +1,10 @@
 package com.app.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -31,15 +34,21 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/view")
-	public String viewproduct()
+	public String viewproduct(Model m)
 	{
+		List<Product> pl =hs.allProducts();
+		m.addAttribute("data",pl);
 		return "viewproduct";
 	}
 	
 	@RequestMapping("/addproducts")
-	public String addproducts(@ModelAttribute Product product)
+	public String addproducts(@ModelAttribute Product product,Model m)
 	{	
 		hs.saveProduct(product);
+		List<Product> pl =hs.allProducts();
+		m.addAttribute("data",pl);
 		return "viewproduct";
 	}
+	
+	
 }

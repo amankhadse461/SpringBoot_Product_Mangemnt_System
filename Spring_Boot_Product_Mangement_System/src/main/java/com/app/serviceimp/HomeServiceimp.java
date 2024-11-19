@@ -1,5 +1,7 @@
 package com.app.serviceimp;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,11 @@ public class HomeServiceimp implements HomeService {
 	public void saveProduct(Product product) {
 		hr.save(product);
 		
+	}
+
+	@Override
+	public List<Product> allProducts() {
+		return hr.findAll();
 	}
 
 }

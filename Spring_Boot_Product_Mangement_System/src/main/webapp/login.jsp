@@ -8,8 +8,8 @@
 </head>
 <body>
 <form action="log">
-Admin-Username: <input type="text" >
-Admin-Password: <input type="password">
+Admin-Username: <input type="text" ><br>
+Admin-Password: <input type="password"><br>
 <input type="submit">
 </form>
 </body>

@@ -7,6 +7,7 @@
 <title>Admin-view</title>
 </head>
 <body>
-
+<a href="add">Addproduct</a><br>
+<a href="view">Viewproduct</a><br>
 </body>
 </html>

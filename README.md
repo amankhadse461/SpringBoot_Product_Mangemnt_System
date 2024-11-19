@@ -1,2 +1,2 @@
-# SprinBootg_Product_Mangemnt_System
+# SprinBoot_Product_Mangemnt_System
 Create a project Mangemnt system

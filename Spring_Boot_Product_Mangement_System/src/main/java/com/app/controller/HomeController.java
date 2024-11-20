@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.app.model.Product;
 import com.app.service.HomeService;
@@ -45,6 +46,15 @@ public class HomeController {
 	public String addproducts(@ModelAttribute Product product,Model m)
 	{	
 		hs.saveProduct(product);
+		List<Product> pl =hs.allProducts();
+		m.addAttribute("data",pl);
+		return "viewproduct";
+	}
+	
+	@RequestMapping("/delete")
+	public String delete(@RequestParam("pid") int pid,Model m)
+	{
+		hs.deletedata(pid);
 		List<Product> pl =hs.allProducts();
 		m.addAttribute("data",pl);
 		return "viewproduct";

@@ -10,4 +10,6 @@ public interface HomeService {
 
 	List<Product> allProducts();
 
+	void deletedata(int pid);
+
 }

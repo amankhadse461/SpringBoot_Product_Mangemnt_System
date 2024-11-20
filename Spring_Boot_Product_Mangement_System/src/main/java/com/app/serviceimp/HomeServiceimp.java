@@ -26,4 +26,10 @@ public class HomeServiceimp implements HomeService {
 		return hr.findAll();
 	}
 
+	@Override
+	public void deletedata(int pid) {
+		hr.deleteById(pid);
+		
+	}
+
 }

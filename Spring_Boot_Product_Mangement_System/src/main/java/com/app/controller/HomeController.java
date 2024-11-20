@@ -64,5 +64,15 @@ public class HomeController {
 	public String edit()
 	{
 		return "edit";
+		
+	}
+	
+	@RequestMapping("/editdata")
+	public String editdata(@ModelAttribute Product product,Model m)
+	{
+		hs.saveProduct(product);
+		List<Product> pl =hs.allProducts();
+		m.addAttribute("data",pl);
+		return "viewproduct";
 	}
 }

@@ -60,5 +60,9 @@ public class HomeController {
 		return "viewproduct";
 	}
 	
-	
+	@RequestMapping("/edit")
+	public String edit()
+	{
+		return "edit";
+	}
 }

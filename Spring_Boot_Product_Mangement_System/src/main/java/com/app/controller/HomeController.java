@@ -48,7 +48,7 @@ public class HomeController {
 		hs.saveProduct(product);
 		List<Product> pl =hs.allProducts();
 		m.addAttribute("data",pl);
-		return "viewproduct";
+		return "adminview";
 	}
 	
 	@RequestMapping("/delete")
@@ -67,7 +67,7 @@ public class HomeController {
 		
 	}
 	
-	@RequestMapping("/editdata")
+	@RequestMapping("/editproduct")
 	public String editdata(@ModelAttribute Product product,Model m)
 	{
 		hs.saveProduct(product);
